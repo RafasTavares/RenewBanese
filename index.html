@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banese Alimentação</title>
+        <link rel="stylesheet" href="/Content/css/foundation.css" />
+    <link rel="stylesheet" href="/Content/css/layout.css" />
+    <link href="/Content/css/normalize.css" rel="stylesheet" />
+</head>
+<body>
+    <iframe id="baneseIframe" src="https://baneseconvenio.marketpay.com.br/LoginModuloCliente?acao=login" frameborder="0" width="100%" height="100%" style="min-height:500px"></iframe>
+
+    <script src="/Content/js/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/Content/js/foundation.js"></script>
+    <script src="/Content/js/foundation.min.js"></script>
+    <script src="/Content/js/modernizr.js"></script>
+    <script src="/Content/js/foundation/foundation.dropdown.js"></script>
+    <script src="/Content/js/foundation/foundation.tab.js"></script>
+    <script src="/Content/js/foundation/foundation.topbar.js"></script>
+<script>
+$(document).ready(function(){
+   $(".caixaLogin").remove();
+console.log('oi');
+var obj = $("iframe").contents().find(".caixaLogin");
+obj.remove();
+}); 
+</script>
+</body>
+</html>
